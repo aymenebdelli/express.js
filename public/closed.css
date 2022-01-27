@@ -1,0 +1,12 @@
+#not-working{
+    text-align: center;
+    margin: 30px 30px;
+    border-radius: 8px;
+    position:relative;
+    left: 250px;
+}
+.pos-tocenter{
+    position: absolute;
+    font-style: oblique;
+    left: 450px;
+}

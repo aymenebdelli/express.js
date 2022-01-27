@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <link rel="stylesheet" href="/home.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <div>
+      <section id="armada">
+        <div class="container py-5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-5">
+            <div class="col">
+              <div class="card armada text-center">
+                <div class="card-body py-3">
+                  <img src="/resources/avanza.jpg" alt="avanza" width="70%">
+                  <h2 class="card-title text-center">Toyota All New Avanza</h2>
+                  <p class="card-text text-center">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quibusdam temporibus, vel quas impedit inventore autem.
+                  </p>
+                </div>
+                <div
+                  class="summary w-100 d-flex flex-row flex-wrap border-top border-bottom p-3 m-1 justify-content-center"
+                >
+                  <div
+                    class="price d-flex flex-row justify-content-between align-items-baseline"
+                  >
+                    <div class="currency fs-1 fw-bold flex-grow-0">Rp.</div>
+                    <div
+                      class="nominal fs-4 fw-bold flex-grow-1 w-100 text-end"
+                    >
+                      399.000,-
+                    </div>
+                  </div>
+                  <div class="periode w-100 text-center mt-1">
+                    per 6 - 12 hours
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-row flex-wrap w-100 m-1 justify-content-center align-content-between border-bottom"
+                >
+                  <div
+                    class="driver p-3"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Include Driver"
+                  >
+                    <i class="fas fa-user-tie"></i>
+                  </div>
+                  <div
+                    class="gasoline p-3"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Include Gasoline"
+                  >
+                    <i class="fas fa-gas-pump"></i>
+                  </div>
+                  <div
+                    class="capacity p-3"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Capacity 7 pax"
+                  >
+                    <i class="fas fa-users"></i
+                    ><span class="ms-2">Capacity 4 pax</span>
+                  </div>
+                </div>
+                <div class="action text-center p-3 m-auto">
+                  <div class="btn-group" role="group" aria-label="Card Action">
+                    <button type="button" class="btn btn-whatsapp">
+                      <i class="fab fa-whatsapp"></i
+                      ><span class="d-none d-lg-inline-block ms-2"
+                        >WhatsApp</span
+                      >
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      <i class="fa fa-phone"></i
+                      ><span class="d-none d-lg-inline-block ms-2"
+                        >Call Us</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card armada text-center">
+                <div class="card-body py-3">
+                  <img src="/resources/juke.jpg" alt="juke" width="80%">
+                  <h2 class="card-title text-center">Nissan Juke</h2>
+                  <p class="card-text text-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis dolores dolorum, saepe quisquam distinctio
+                    molestias.
+                  </p>
+                </div>
+                <div
+                  class="summary w-100 d-flex flex-row flex-wrap border-top border-bottom p-3 m-1 justify-content-center"
+                >
+                  <div
+                    class="price d-flex flex-row justify-content-between align-items-baseline"
+                  >
+                    <div class="currency fs-1 fw-bold flex-grow-0">Rp.</div>
+                    <div
+                      class="nominal fs-4 fw-bold flex-grow-1 w-100 text-end"
+                    >
+                      799.000,-
+                    </div>
+                  </div>
+                  <div class="periode w-100 text-center mt-1">
+                    per 6 - 12 hours
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-row flex-wrap w-100 m-1 justify-content-center align-content-between border-bottom"
+                >
+                  <div
+                    class="driver p-3"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Include Driver"
+                  >
+                    <i class="fas fa-user-tie"></i>
+                  </div>
+                  <div
+                    class="gasoline p-3"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Include Gasoline"
+                  >
+                    <i class="fas fa-gas-pump"></i>
+                  </div>
+                  <div
+                    class="capacity p-3"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Capacity 15 pax"
+                  >
+                    <i class="fas fa-users"></i
+                    ><span class="ms-2">Capacity 4 pax</span>
+                  </div>
+                </div>
+                <div class="action text-center p-3 m-auto">
+                  <div class="btn-group" role="group" aria-label="Card Action">
+                    <button type="button" class="btn btn-whatsapp">
+                      <i class="fab fa-whatsapp"></i
+                      ><span class="d-none d-lg-inline-block ms-2"
+                        >WhatsApp</span
+                      >
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      <i class="fa fa-phone"></i
+                      ><span class="d-none d-lg-inline-block ms-2"
+                        >Call Us</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card armada text-center">
+                <div class="card-body py-3">
+                  <img src="/resources/evo.jpg" alt="evo" width="80%">
+                  <h2 class="card-title text-center">Mitsubishi Evo</h2>
+                  <p class="card-text text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam qui omnis officia dicta perferendis voluptatem.
+                  </p>
+                </div>
+                <div
+                  class="summary w-100 d-flex flex-row flex-wrap border-top border-bottom p-3 m-1 justify-content-center"
+                >
+                  <div
+                    class="price d-flex flex-row justify-content-between align-items-baseline"
+                  >
+                    <div class="currency fs-1 fw-bold flex-grow-0">Rp.</div>
+                    <div
+                      class="nominal fs-4 fw-bold flex-grow-1 w-100 text-end"
+                    >
+                      1.299.000,-
+                    </div>
+                  </div>
+                  <div class="periode w-100 text-center mt-1">
+                    per 6 - 12 hours
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-row flex-wrap w-100 m-1 justify-content-center align-content-between border-bottom"
+                >
+                  <div
+                    class="driver p-3"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Include Driver"
+                  >
+                    <i class="fas fa-user-tie"></i>
+                  </div>
+                  <div
+                    class="gasoline p-3"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Include Gasoline"
+                  >
+                    <i class="fas fa-gas-pump"></i>
+                  </div>
+                  <div
+                    class="capacity p-3"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Capacity 7 pax"
+                  >
+                    <i class="fas fa-users"></i
+                    ><span class="ms-2">Capacity 5 pax</span>
+                  </div>
+                </div>
+                <div class="action text-center p-3 m-auto">
+                  <div class="btn-group" role="group" aria-label="Card Action">
+                    <button type="button" class="btn btn-whatsapp">
+                      <i class="fab fa-whatsapp"></i
+                      ><span class="d-none d-lg-inline-block ms-2"
+                        >WhatsApp</span
+                      >
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      <i class="fa fa-phone"></i
+                      ><span class="d-none d-lg-inline-block ms-2"
+                        >Call Us</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

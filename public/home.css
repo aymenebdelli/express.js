@@ -1,0 +1,157 @@
+@import url(http://fonts.googleapis.com/css?family=Poppins|Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+/*** Mixins ***/
+@mixin fontsize($sizeValue: 16) {
+    font-size: $sizeValue + px; //fallback for old browsers
+    font-size: (0.0625 * $sizeValue) + rem;
+  }
+  
+  
+  @mixin lineheight($heightValue: 20) {
+    line-height: $heightValue + px; //fallback for old browsers
+    line-height: (0.0625 * $heightValue) + rem;
+  }
+ 
+  
+  @mixin rhythm($sizeValue: 16, $heightValue: 20) {
+    @include fontsize($sizeValue);
+    @include lineheight($heightValue);
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+img{
+    border-radius: 8px;
+}
+
+.btn .btn-whatsapp {
+  background: #075e54;
+  color: white;
+}
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+  background: #25d366;
+  color: black;
+}
+
+.border-top {
+  border-top: 1px solid darken(#e0e0e0, 5%) !important;
+}
+.border-bottom {
+  border-bottom: 1px solid darken(#e0e0e0, 5%) !important;
+}
+
+.card {
+  color: #444;
+  background: #e0e0e0;
+  border: #e0e0e0;
+  border-radius: 1rem;
+  cursor: pointer ;
+  box-shadow: -4px -4px 8px rgba(lighten(#e0e0e0, 20%), 0.7),
+    4px 4px 8px rgba(darken(#e0e0e0, 20%), 0.3),
+    inset 16px 16px 32px rgba(darken(#e0e0e0, 20%), 0.2),
+    inset -16px -16px 32px rgba(lighten(#e0e0e0, 20%), 0.5);
+}
+.card:hover{
+    transform: translateY(1rem);
+}
+.card .armada {
+  padding: 0;
+  margin: 0;
+  border-color: darken(#e0e0e0, 5%);
+  display: flex;
+  flex-flow: row wrap;
+}
+.card-header {
+  background: #fafafa;
+  border: none;
+}
+.card-title {
+  font-size: 1.5rem;
+}
+.card-body {
+  font-size: 0.85rem;
+  background: transparent;
+}
+.card-footer {
+  border: none;
+}
+.card-block {
+  padding: 15px;
+}
+.card-title {
+  @include rhythm(18, 24);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.summary {
+  @include rhythm(14, 18);
+}
+.price {
+  width: 100%;
+}
+.currency {
+  @include rhythm(16, 18);
+  font-weight: 500;
+}
+.nominal {
+  @include rhythm(36, 40);
+  font-weight: 700;
+}
+
+.periode {
+  @include rhythm(12, 18);
+  width: 100%;
+  text-align: right;
+}
+
+.details .driver,
+.gasoline,
+.capacity {
+  padding: 5px;
+  text-align: center;
+}
+i {
+  display: block;
+  text-align: center;
+}
+span {
+  font-size: inherit;
+}
+
+.action {
+  display: block;
+}
+.action:hover,
+.action:focus {
+  cursor: pointer;
+  border-color: #444;
+}
+
+.btn-group {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: -3px -3px 6px rgba(lighten(#e0e0e0, 10%), 1),
+    3px 3px 6px rgba(darken(#e0e0e0, 30%), 1) !important;
+}
+.btn {
+  border: none;
+  box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3),
+    inset -1px -1px 5px rgba(0, 0, 0, 0.5);
+}
+.btn:hover {
+  box-shadow: inset 0 0 5px rgba(255, 255, 0.5),
+    inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.btn:focus {
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 5px rgba(255, 255, 255, 0.3);
+}

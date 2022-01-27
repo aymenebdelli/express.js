@@ -1,0 +1,10 @@
+
+.services{
+    margin: 40px 40px;
+    text-align: center;
+    font-style: oblique;
+}
+.pos-button{
+    position: relative;
+    bottom: 10px;
+}
